@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>CheeCh Privacy Policy</h1>
-<p class="updated">Last updated: August 14, 2026</p>
+<p class="updated">Last updated: September 28, 2026</p>
 
 <p>CheeCh ("we", "our", "the app") is a ride-sharing coordination app that lets users post and browse ride offers and seat requests. This policy explains what information we collect, why, and how it's handled.</p>
 
@@ -26,6 +26,7 @@
   <li><strong>Profile information:</strong> full name and phone number, which you provide during sign-up</li>
   <li><strong>Ride post content:</strong> origin, destination, departure time, seat counts, and any notes you add when posting a ride offer or seat request</li>
   <li><strong>Booking information:</strong> which ride posts you've booked seats on</li>
+  <li><strong>Push notification token:</strong> if you allow notifications, a device token issued by Apple or Google (via Expo's push service) so we can send you notifications</li>
 </ul>
 <p>We do <strong>not</strong> collect location/GPS data, and we do not process any payments — CheeCh has no in-app payment system.</p>
 
@@ -34,14 +35,16 @@
   <li>To create and manage your account</li>
   <li>To display your posts and contact details (phone number) to other users so they can coordinate rides with you via phone call or WhatsApp</li>
   <li>To operate core app features: the ride feed, posting, and booking</li>
+  <li>To send push notifications about your rides — for example, when someone books a seat on your ride, or when a ride you booked is cancelled</li>
 </ul>
 <p>Your name and phone number are visible to other signed-in users of the app, since the app's purpose is to let riders and drivers contact each other directly.</p>
 
 <h2>Data Storage</h2>
-<p>App data (account records, profiles, ride posts, bookings) is stored using Supabase, a hosted PostgreSQL database provider. We do not sell your data or share it with third parties for advertising purposes.</p>
+<p>App data (account records, profiles, ride posts, bookings) is stored using Supabase, a hosted PostgreSQL database provider. Push notifications are delivered through Expo's push notification service, which passes them to Apple Push Notification service or Firebase Cloud Messaging. We do not sell your data or share it with third parties for advertising purposes.</p>
 
 <h2>Data Retention &amp; Deletion</h2>
-<p>You can request deletion of your account and associated data at any time by contacting us at the email address below. We will delete your profile, posts, and booking records within a reasonable timeframe.</p>
+<p>You can delete your account at any time from within the app: open the <strong>Profile</strong> tab and tap <strong>Delete account</strong>. This immediately and permanently deletes your account, profile, ride posts, bookings and push notification token. Passengers who had booked seats on your upcoming rides are notified that the ride was cancelled.</p>
+<p>If you can't access the app, you can also request deletion by contacting us at the email address below.</p>
 
 <h2>Children's Privacy</h2>
 <p>CheeCh is not directed at children under 13, and we do not knowingly collect information from children under 13.</p>
